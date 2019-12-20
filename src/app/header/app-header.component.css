@@ -1,0 +1,44 @@
+.app-header{
+    height: 68px;
+}
+.header-left-div {
+    width: 25%;
+}
+.header-center-div{
+    width: 50%;
+    background-color:#f8f8f8;
+    vertical-align: middle;
+    
+}
+
+.header-center-div ul{
+    display: flex;
+    align-items: center; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    
+    
+}
+
+.header-center-div ul li{
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+    font-display: inherit;
+    
+}
+
+li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.header-center-div a{
+    color: green;
+}
+.header-right-div{
+    width: 25%;
+}
+
+
