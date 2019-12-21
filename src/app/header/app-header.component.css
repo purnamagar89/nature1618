@@ -6,7 +6,9 @@
 }
 img {
     width: 50%;
-    margin-left: 72.5px;
+    height: 100%;
+    position: relative;
+    margin-left: 20px;
   }
 .header-center-div{
     width: 40%;
@@ -49,5 +51,7 @@ li:last-child {
 .header-right-div{
     width: 30%;
 }
+
+
 
 
