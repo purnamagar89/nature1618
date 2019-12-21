@@ -62,6 +62,7 @@ app-header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-weight: bold;
 }
 
 app-header h1 {
@@ -69,6 +70,23 @@ app-header h1 {
   margin: 0;
 }
 
+
+/* App Home Page */
+
+
+app-home {
+ width: 90%;
+ margin-left: 5%;
+ margin-right: 5%;
+ margin-bottom: 30px;
+ margin-top: -40px;
+ padding: 10px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ font-size: 22px;
+
+}
 
 
 

@@ -1,9 +1,38 @@
-h2{
-    color:black;
+.home-r{
+   margin-top: 100px; 
 }
+.home-r1d2{
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle
+}
+img {
+    width: 100%;
+  }
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
+  .r1-p{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    margin: auto;
+  }
+
+
+  .r2-p{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 38px;
+    margin: auto;
+  }
