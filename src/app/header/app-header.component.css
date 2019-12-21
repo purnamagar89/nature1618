@@ -1,12 +1,9 @@
-.app-header{
-    height: 68px;
-}
 .header-left-div {
     width: 30%;
 }
 img {
-    width: 50%;
-    height: 100%;
+    width: 200px;
+    height: 68px;
     position: relative;
     margin-left: 20px;
   }
@@ -35,23 +32,28 @@ img {
     
 }
 
-li:last-child {
-    margin-right: 0;
-    padding-right: 0;
-}
-
 .header-center-div a {
     color: #49a942;
     font-size: 14px;
 }
-.header-center-div a .link-no-hover{
+.header-center-div a:hover {
+    color: #161816;
+}
+
+.header-center-div{
     color: #49a942;
     font-size: 14px;
 }
+
+  @media only screen and (max-width: 600px) {
+    .header-center-div a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+
 .header-right-div{
     width: 30%;
 }
-
-
-
-

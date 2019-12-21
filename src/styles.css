@@ -84,8 +84,29 @@ app-home {
  align-items: center;
  font-size: 22px;
  align-content: center;
+ margin-top: 50px;
+ margin-bottom: 50px;
 
 }
 
+/* App Footer */
 
+app-footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+ul{
+  list-style: none;
+}
+li{
+  list-style: none;
+}
 

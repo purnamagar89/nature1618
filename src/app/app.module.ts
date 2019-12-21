@@ -11,6 +11,7 @@ import { OurStoriesComponent } from './stories/our-stories.component';
 import { HowWeworkComponent } from './work/how-wework.component';
 import { OurProjectsComponent } from './projects/our-projects.component';
 import { GetInvolvedComponent } from './help/get-involved.component';
+import { AppFooterComponent } from './footer/app-footer.component';
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import { GetInvolvedComponent } from './help/get-involved.component';
   declarations: [
     AppComponent,
     AppHeaderComponent,
+    AppFooterComponent,
     AppHomeComponent,
     OurStoriesComponent,
     HowWeworkComponent,
