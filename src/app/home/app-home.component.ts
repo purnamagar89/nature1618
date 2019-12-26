@@ -21,7 +21,6 @@ import {
         opacity: 0,
         transform:"translateX(-100%)"
       })),
-      transition('show => hide', animate('800ms ease-out')),
       transition('hide => show', animate('800ms ease-in'))
     ]),
     
@@ -34,7 +33,6 @@ import {
         opacity: 0,
         transform: "translateX(+100%)"
       })),
-      transition('show => hide', animate('800ms ease-out')),
       transition('hide => show', animate('800ms ease-in'))
     ])
   ],
