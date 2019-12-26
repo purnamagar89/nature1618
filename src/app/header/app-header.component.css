@@ -16,7 +16,7 @@ img {
 .topnav a {
   float: left;
   display: block;
-  color: green;
+  color:  #3c3c3c;;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -36,7 +36,7 @@ img {
 
 
 .topnav a:hover {
-  color: #616161;
+  color: green;
 }
 
 @media screen and (max-width: 600px) {
