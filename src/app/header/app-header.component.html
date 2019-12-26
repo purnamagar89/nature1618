@@ -1,36 +1,10 @@
-<div class="app-header header-left-div">
-  <div><a routerLink="" routerLinkActive="active">
+<div class="topnav" id="myTopnav">
+  <div><a routerLink="" style="margin-top: -10px; margin-bottom: -15px;">
       <img src="../assets/logo.JPG" alt="image"></a>
   </div>
-</div>
-<div class="header-center-div">
-  <ul>
-    <li>
-      <a routerLink="ourstories" routerLinkActive="active">
-        OUR STORY
-      </a>
-    </li>
-
-    <li>
-      <a routerLink="howwework" routerLinkActive="active">
-        HOW IT WORKS
-      </a>
-    </li>
-
-    <li>
-      <a routerLink="ourprojects" routerLinkActive="active">
-        PROJECTS
-      </a>
-    </li>
-
-    <li>
-      <a routerLink="getinvolved" routerLinkActive="active">
-        GET INVOLVED
-      </a>
-    </li>
-  </ul>
-
-</div>
-
-<div class="header-right-div">
+  <a href="" class="active">HOME</a>
+  <a routerLink="ourprojects" routerLinkActive="active">PROJECTS</a>
+  <a routerLink="getinvolved" routerLinkActive="active">GET INVOLVED</a>
+  <a routerLink="howwework" routerLinkActive="active">ABOUT US</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" (click)="openNav()">&#9776;</a>
 </div>

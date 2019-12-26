@@ -8,7 +8,7 @@ import { AppHeaderComponent } from './header/app-header.component';
 import { AppHomeComponent } from './home/app-home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { OurStoriesComponent } from './stories/our-stories.component';
-import { HowWeworkComponent } from './work/how-wework.component';
+import { AboutUsComponent } from './aboutus/about-us.component';
 import { OurProjectsComponent } from './projects/our-projects.component';
 import { GetInvolvedComponent } from './help/get-involved.component';
 import { AppFooterComponent } from './footer/app-footer.component';
@@ -25,7 +25,7 @@ import { AppFooterComponent } from './footer/app-footer.component';
     AppFooterComponent,
     AppHomeComponent,
     OurStoriesComponent,
-    HowWeworkComponent,
+    AboutUsComponent,
     OurProjectsComponent,
     GetInvolvedComponent
   ],
