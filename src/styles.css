@@ -83,7 +83,7 @@ app-home {
  font-size: 22px;
  align-content: center;
  margin-top: 50px;
- margin-bottom: 50px;
+ margin-bottom: 100px;
  position: relative;
  z-index: 1;
 
@@ -93,7 +93,7 @@ app-home {
 
 app-footer {
   width: 100%;
-  margin: 0;
+  margin-top: 100px;
   padding: 0;
   display: flex;
   flex-direction: row;

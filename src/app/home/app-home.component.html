@@ -1,28 +1,35 @@
 <div class="app-home">
-        <div class="row home-r">
-            <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left: 5;padding-right: 0;">
-                <img src="../assets/1.JPG" alt="image">
-            </div>
-
-            <div class="col-md-6 col-sm-6 col-xs-6">
-                <h1>BEAUTIFUL NATURE</h1>
-                <p class="r1-p">
-                    Nature1618 was establlish to work for contribution towards the nature in colaboration with
-                    local communities.
-                    The goal is to plant trees, preserve natural resources in country side, cities of nepal and other
-                    countries to improve quality of
-                    environment also to provide opportunities in local area.</p>
-            </div>
+    <div class="row hero-image">
+        <img  class="hero-image-i" src="../assets/hero-image.JPG" alt="image">
+        <div class="hero-text">
+            <h1 style="font-size:50px;color: whitesmoke;">NATURE1618</h1>
+            <p style="font-size: 20px;color: whitesmoke;">Lets work together for green</p>
+        </div>
+    </div>
+    <div class="row home-r">
+        <div  [@scrollAnimation]="state" class="col-md-6 col-sm-6 col-xs-6" style="padding-left: 5;padding-right: 0;">
+            <img src="../assets/1.JPG" alt="image">
         </div>
 
-        <div class="row home-r">
-            <div class="col-md-6 col-sm-6 col-xs-6">
-                <h1 class="r2-p">“Someone’s sitting in the shade today because someone planted a tree a long time ago.” –
-                    Warren Buffett
-                </h1>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left: 0; padding-right: 5;">
-                <img src="../assets/3.JPG" alt="image">
-            </div>
+        <div [@scrollAnimation]="state" class="col-md-6 col-sm-6 col-xs-6">
+            <h1>BEAUTIFUL NATURE</h1>
+            <p class="r1-p">
+                Nature1618 was establlish to work for contribution towards the nature in colaboration with
+                local communities.
+                The goal is to plant trees, preserve natural resources in country side, cities of nepal and other
+                countries to improve quality of
+                environment also to provide opportunities in local area.</p>
         </div>
+    </div>
+
+    <div  class="row home-r">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <h1 [@scrollAnimationLeft]="state"class="r2-p">“Someone’s sitting in the shade today because someone planted a tree a long time ago.” –
+                Warren Buffett
+            </h1>
+        </div>
+        <div [@scrollAnimationLeft]="state"class="col-md-6 col-sm-6 col-xs-6" style="padding-left: 0; padding-right: 5;">
+            <img src="../assets/3.JPG" alt="image">
+        </div>
+    </div>
 </div>
