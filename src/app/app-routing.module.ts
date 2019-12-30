@@ -5,20 +5,17 @@ import { AppComponent } from './app.component';
 import { OurStoriesComponent } from './stories/our-stories.component';
 import { AboutUsComponent } from './aboutus/about-us.component';
 import { GetInvolvedComponent } from './help/get-involved.component';
-import { OurProjectsComponent } from './projects/our-projects.component';
+import { OurWorkComponent } from './ourwork/our-work.component';
 const routes: Routes = [
 
     {
          path: '', component: AppHomeComponent
     },
     {
-        path: 'ourstories', component: OurStoriesComponent
+        path: 'aboutus', component: AboutUsComponent
     },
     {
-        path: 'howwework', component: AboutUsComponent
-    },
-    {
-        path: 'ourprojects', component: OurProjectsComponent
+        path: 'ourwork', component: OurWorkComponent
     },
     {
         path: 'getinvolved', component: GetInvolvedComponent

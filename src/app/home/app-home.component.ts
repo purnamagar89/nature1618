@@ -51,8 +51,6 @@ export class AppHomeComponent {
 
       if (scrollPosition >= componentPosition) {
         this.state = 'show'
-      } else {
-        this.state = 'hide'
       }
 
     }
