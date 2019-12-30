@@ -5,3 +5,27 @@ img {
     position: relative;
     z-index: -1;
     }
+
+    .about-description p{
+    font-size: 18px;
+    text-align: left;
+    position: relative;
+    padding: 15;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    display: block;
+    flex-direction: row;
+
+    }
+
+    .about-description h1{
+        text-align: left;
+        position: relative;
+        margin-left: 20%;
+        padding: 15;
+        display: block;
+        line-height: 2em;
+        font-size: 28px;
+
+    }

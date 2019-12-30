@@ -11,7 +11,7 @@
     display: block;
     flex-direction: row;
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .r2-p{
@@ -22,7 +22,7 @@
     flex-direction: row;
     text-align: center;
     vertical-align: middle;
-    font-size: 34px;
+    font-size: 28px;
   }
 
   h1{

@@ -41,6 +41,11 @@ img {
 
 .header-navbar a:hover {
   color: green;
+  cursor: pointer;
+}
+
+.header-navbar a:active{
+  color: green;
 }
 
 @media screen and (max-width: 600px) {
