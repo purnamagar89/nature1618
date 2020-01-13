@@ -5,3 +5,26 @@ img {
     position: relative;
     z-index: -1;
     }
+
+    .help-desc p{
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        padding: 15;
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-bottom: 20px;
+        display: block;
+        flex-direction: row;
+    
+        }
+    
+        .help-desc h1{
+            text-align: center;
+            position: relative;
+            padding: 15;
+            display: block;
+            line-height: 2em;
+            font-size: 28px;
+    
+        }

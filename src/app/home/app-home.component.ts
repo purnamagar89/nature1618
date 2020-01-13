@@ -15,13 +15,12 @@ import {
     trigger('scrollAnimation', [
       state('show', style({
         opacity: 1,
-        transform: "translateX(0)"
       })),
       state('hide',   style({
         opacity: 0,
-        transform:"translateX(-100%)"
+        transform:"translateY(100%)"
       })),
-      transition('hide => show', animate('800ms ease-in'))
+      transition('hide => show', animate('1000ms ease-in'))
     ]),
     
     trigger('scrollAnimationLeft', [
@@ -35,7 +34,7 @@ import {
       })),
       transition('hide => show', animate('800ms ease-in'))
     ])
-  ],
+  ]
 
   
 })
