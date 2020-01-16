@@ -1,4 +1,5 @@
 import { Component,HostListener, ElementRef } from '@angular/core';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {
   trigger,
   state,
