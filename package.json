@@ -36,6 +36,7 @@
     "ts-loader": "4.2.0",
     "tslib": "1.10.0",
     "web-animations-js": "2.3.2",
+    "webpack": "^4.41.5",
     "webpack-cli": "^2.1.4",
     "zone.js": "0.9.1"
   },
