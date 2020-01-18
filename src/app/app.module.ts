@@ -1,3 +1,5 @@
+import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,8 +18,11 @@ import { AppFooterComponent } from './footer/app-footer.component';
 
 
 @NgModule({
-  imports: [
-    BrowserModule,
+  imports:[
+ CommonModule,
+NgtUniversalModule,
+ 
+    
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
@@ -34,6 +39,5 @@ import { AppFooterComponent } from './footer/app-footer.component';
     OurWorkComponent,
     GetInvolvedComponent
   ],
-  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

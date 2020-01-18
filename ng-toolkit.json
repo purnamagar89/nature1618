@@ -1,0 +1,17 @@
+{
+  "universal": {
+    "project": "angular.io-example",
+    "skipInstall": false,
+    "directory": "."
+  },
+  "serverless": {
+    "provider": "aws",
+    "project": "angular.io-example",
+    "skipInstall": false,
+    "directory": ".",
+    "serverless": {
+      "aws": {},
+      "gcloud": {}
+    }
+  }
+}
