@@ -20,9 +20,10 @@ describe('#getStackInfo()', () => {
     serverless.setProvider('aws', new AwsProvider(serverless, options));
     serverless.service.service = 'my-service';
     serverless.service.functions = {
-      hello: {},
-      world: {},
+      hello: { name: 'my-service-dev-hello' },
+      world: { name: 'customized' },
     };
+    serverless.service.layers = { test: {} };
     awsInfo = new AwsInfo(serverless, options);
 
     describeStacksStub = sinon.stub(awsInfo.provider, 'request');
@@ -36,9 +37,11 @@ describe('#getStackInfo()', () => {
     const describeStacksResponse = {
       Stacks: [
         {
-          StackId: 'arn:aws:cloudformation:us-east-1:123456789012:' +
+          StackId:
+            'arn:aws:cloudformation:us-east-1:123456789012:' +
             'stack/myteststack/466df9e0-0dff-08e3-8e2f-5088487c4896',
-          Description: 'AWS CloudFormation Sample Template S3_Bucket: ' +
+          Description:
+            'AWS CloudFormation Sample Template S3_Bucket: ' +
             'Sample template showing how to create a publicly accessible S3 bucket.',
           Tags: [],
           Outputs: [
@@ -56,6 +59,21 @@ describe('#getStackInfo()', () => {
               Description: 'second',
               OutputKey: 'ApiGatewayApiKey2Value',
               OutputValue: 'yyy',
+            },
+            {
+              Description: 'Current Lambda layer version',
+              OutputKey: 'TestLambdaLayerQualifiedArn',
+              OutputValue: 'arn:aws:lambda:region:NNNNNNNNNNNN:layer:test:1',
+            },
+            {
+              Description: 'CloudFront Distribution Id',
+              OutputKey: 'CloudFrontDistribution',
+              OutputValue: 'a12bcdef3g45hi',
+            },
+            {
+              Description: 'CloudFront Distribution Domain Name',
+              OutputKey: 'CloudFrontDistributionDomainName',
+              OutputValue: 'a12bcdef3g45hi.cloudfront.net',
             },
           ],
           StackStatusReason: null,
@@ -79,10 +97,18 @@ describe('#getStackInfo()', () => {
           },
           {
             name: 'world',
-            deployedName: 'my-service-dev-world',
+            deployedName: 'customized',
           },
         ],
-        endpoint: 'ab12cd34ef.execute-api.us-east-1.amazonaws.com/dev',
+        layers: [
+          {
+            name: 'test',
+            arn: 'arn:aws:lambda:region:NNNNNNNNNNNN:layer:test:1',
+          },
+        ],
+
+        endpoints: ['ab12cd34ef.execute-api.us-east-1.amazonaws.com/dev'],
+        cloudFront: 'a12bcdef3g45hi.cloudfront.net',
         service: 'my-service',
         stage: 'dev',
         region: 'us-east-1',
@@ -104,18 +130,31 @@ describe('#getStackInfo()', () => {
           OutputKey: 'ApiGatewayApiKey2Value',
           OutputValue: 'yyy',
         },
+        {
+          Description: 'Current Lambda layer version',
+          OutputKey: 'TestLambdaLayerQualifiedArn',
+          OutputValue: 'arn:aws:lambda:region:NNNNNNNNNNNN:layer:test:1',
+        },
+        {
+          Description: 'CloudFront Distribution Id',
+          OutputKey: 'CloudFrontDistribution',
+          OutputValue: 'a12bcdef3g45hi',
+        },
+        {
+          Description: 'CloudFront Distribution Domain Name',
+          OutputKey: 'CloudFrontDistributionDomainName',
+          OutputValue: 'a12bcdef3g45hi.cloudfront.net',
+        },
       ],
     };
 
     return awsInfo.getStackInfo().then(() => {
       expect(describeStacksStub.calledOnce).to.equal(true);
-      expect(describeStacksStub.calledWithExactly(
-        'CloudFormation',
-        'describeStacks',
-        {
+      expect(
+        describeStacksStub.calledWithExactly('CloudFormation', 'describeStacks', {
           StackName: awsInfo.provider.naming.getStackName(),
-        }
-      )).to.equal(true);
+        })
+      ).to.equal(true);
 
       expect(awsInfo.gatheredData).to.deep.equal(expectedGatheredDataObj);
     });
@@ -129,7 +168,8 @@ describe('#getStackInfo()', () => {
     const expectedGatheredDataObj = {
       info: {
         functions: [],
-        endpoint: '',
+        layers: [],
+        endpoints: [],
         service: 'my-service',
         stage: 'dev',
         region: 'us-east-1',
@@ -140,13 +180,11 @@ describe('#getStackInfo()', () => {
 
     return awsInfo.getStackInfo().then(() => {
       expect(describeStacksStub.calledOnce).to.equal(true);
-      expect(describeStacksStub.calledWithExactly(
-        'CloudFormation',
-        'describeStacks',
-        {
+      expect(
+        describeStacksStub.calledWithExactly('CloudFormation', 'describeStacks', {
           StackName: awsInfo.provider.naming.getStackName(),
-        }
-      )).to.equal(true);
+        })
+      ).to.equal(true);
 
       expect(awsInfo.gatheredData).to.deep.equal(expectedGatheredDataObj);
     });
