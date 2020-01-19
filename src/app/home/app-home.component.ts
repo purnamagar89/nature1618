@@ -1,4 +1,3 @@
-import { @ng-toolkit/universal } from 'Window';
 import { Component,HostListener, ElementRef , Inject} from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {
@@ -43,7 +42,7 @@ import {
 export class AppHomeComponent {
   state = 'hide'
 
-  constructor(@Inject(@ng-toolkit/universal) private WINDOW: window, public el: ElementRef) { }
+  constructor( public el: ElementRef) { }
 
   @HostListener('window:scroll', ['$event'])
     checkScroll() {

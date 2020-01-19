@@ -9,8 +9,6 @@ import * as bodyParser from 'body-parser';
 import * as cors from 'cors';
 import * as compression from 'compression';
 
-import {join} from 'path';
-
 enableProdMode();
 
 export const app = express();
@@ -21,7 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // const DIST_FOLDER = join(process.cwd(), 'dist');
-
+var require: any;
 const {AppServerModuleNgFactory, LAZY_MODULE_MAP} = require('./dist/server/main');
 
 app.engine('html', ngExpressEngine({
