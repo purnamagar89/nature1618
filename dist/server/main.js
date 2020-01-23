@@ -870,7 +870,7 @@ exports.OurWorkComponent = OurWorkComponent;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.environment = {
     production: true,
-    baseHref: '/production/'
+    baseHref: '/'
 };
 /*
 Copyright Google LLC. All Rights Reserved.

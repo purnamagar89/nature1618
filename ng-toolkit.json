@@ -1,14 +1,10 @@
 {
-  "universal": {
-    "project": "nature1618",
-    "skipInstall": false,
-    "directory": "."
-  },
   "serverless": {
     "provider": "aws",
     "project": "nature1618",
     "skipInstall": false,
     "directory": ".",
+    "clientProject": "nature1618",
     "serverless": {
       "aws": {},
       "gcloud": {}

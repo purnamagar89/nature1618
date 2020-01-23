@@ -6,12 +6,12 @@
     },
     "provider": {
       "stage": "production",
-      "variableSyntax": "\\${([ ~:a-zA-Z0-9._@'\",\\-\\/\\(\\)*?]+?)}",
+      "region": "eu-central-1",
+      "variableSyntax": "\\${([ ~:a-zA-Z0-9._@'\",\\-\\/\\(\\)*]+?)}",
       "name": "aws",
-      "runtime": "nodejs6.10",
+      "runtime": "nodejs10.x",
       "memorySize": 192,
       "timeout": 10,
-      "region": "eu-central-1",
       "versionFunctions": true,
       "remoteFunctionData": null,
       "compiledCloudFormationTemplate": {
@@ -26,46 +26,6 @@
                   {
                     "ServerSideEncryptionByDefault": {
                       "SSEAlgorithm": "AES256"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "ServerlessDeploymentBucketPolicy": {
-            "Type": "AWS::S3::BucketPolicy",
-            "Properties": {
-              "Bucket": {
-                "Ref": "ServerlessDeploymentBucket"
-              },
-              "PolicyDocument": {
-                "Statement": [
-                  {
-                    "Action": "s3:*",
-                    "Effect": "Deny",
-                    "Principal": "*",
-                    "Resource": [
-                      {
-                        "Fn::Join": [
-                          "",
-                          [
-                            "arn:",
-                            {
-                              "Ref": "AWS::Partition"
-                            },
-                            ":s3:::",
-                            {
-                              "Ref": "ServerlessDeploymentBucket"
-                            },
-                            "/*"
-                          ]
-                        ]
-                      }
-                    ],
-                    "Condition": {
-                      "Bool": {
-                        "aws:SecureTransport": false
-                      }
                     }
                   }
                 ]
@@ -115,12 +75,11 @@
                       {
                         "Effect": "Allow",
                         "Action": [
-                          "logs:CreateLogStream",
-                          "logs:CreateLogGroup"
+                          "logs:CreateLogStream"
                         ],
                         "Resource": [
                           {
-                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/nature1618-production*:*"
+                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/nature1618-production-api:*"
                           }
                         ]
                       },
@@ -131,7 +90,7 @@
                         ],
                         "Resource": [
                           {
-                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/nature1618-production*:*:*"
+                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/nature1618-production-api:*:*"
                           }
                         ]
                       }
@@ -146,9 +105,7 @@
                   [
                     "nature1618",
                     "production",
-                    {
-                      "Ref": "AWS::Region"
-                    },
+                    "eu-central-1",
                     "lambdaRole"
                   ]
                 ]
@@ -162,7 +119,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/nature1618/production/1579392486328-2020-01-19T00:08:06.328Z/nature1618.zip"
+                "S3Key": "serverless/nature1618/production/1579742348199-2020-01-23T01:19:08.199Z/nature1618.zip"
               },
               "FunctionName": "nature1618-production-api",
               "Handler": "lambda.universal",
@@ -173,7 +130,7 @@
                   "Arn"
                 ]
               },
-              "Runtime": "nodejs6.10",
+              "Runtime": "nodejs10.x",
               "Timeout": 10
             },
             "DependsOn": [
@@ -181,14 +138,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "ApiLambdaVersionY8FSdSNvmoZeLnNjaoGlHO34aZIQqIuMygE9tzjg": {
+          "ApiLambdaVersionqFmlRElH8OsGBEzV8LEALrXJU0TDKCdd1yOZqOlQ2M": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "IoeglChk2fs/qm1SMFdDfS1xjKnlVj1JZB1Y7Z+Ctas="
+              "CodeSha256": "UVVxDI0Z7b0WlklfTq7MWLdpu/UAorlDLyyciP3y5NU="
             }
           },
           "ApiGatewayRestApi": {
@@ -199,8 +156,7 @@
                 "Types": [
                   "EDGE"
                 ]
-              },
-              "Policy": ""
+              }
             }
           },
           "ApiGatewayResourceProxyVar": {
@@ -307,7 +263,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1579392392016": {
+          "ApiGatewayDeployment1579742272779": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -330,7 +286,17 @@
                 ]
               },
               "Action": "lambda:InvokeFunction",
-              "Principal": "apigateway.amazonaws.com",
+              "Principal": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "apigateway.",
+                    {
+                      "Ref": "AWS::URLSuffix"
+                    }
+                  ]
+                ]
+              },
               "SourceArn": {
                 "Fn::Join": [
                   "",
@@ -367,7 +333,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersionY8FSdSNvmoZeLnNjaoGlHO34aZIQqIuMygE9tzjg"
+              "Ref": "ApiLambdaVersionqFmlRElH8OsGBEzV8LEALrXJU0TDKCdd1yOZqOlQ2M"
             }
           },
           "ServiceEndpoint": {
@@ -380,11 +346,7 @@
                   {
                     "Ref": "ApiGatewayRestApi"
                   },
-                  ".execute-api.",
-                  {
-                    "Ref": "AWS::Region"
-                  },
-                  ".",
+                  ".execute-api.eu-central-1.",
                   {
                     "Ref": "AWS::URLSuffix"
                   },
@@ -407,46 +369,6 @@
                   {
                     "ServerSideEncryptionByDefault": {
                       "SSEAlgorithm": "AES256"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "ServerlessDeploymentBucketPolicy": {
-            "Type": "AWS::S3::BucketPolicy",
-            "Properties": {
-              "Bucket": {
-                "Ref": "ServerlessDeploymentBucket"
-              },
-              "PolicyDocument": {
-                "Statement": [
-                  {
-                    "Action": "s3:*",
-                    "Effect": "Deny",
-                    "Principal": "*",
-                    "Resource": [
-                      {
-                        "Fn::Join": [
-                          "",
-                          [
-                            "arn:",
-                            {
-                              "Ref": "AWS::Partition"
-                            },
-                            ":s3:::",
-                            {
-                              "Ref": "ServerlessDeploymentBucket"
-                            },
-                            "/*"
-                          ]
-                        ]
-                      }
-                    ],
-                    "Condition": {
-                      "Bool": {
-                        "aws:SecureTransport": false
-                      }
                     }
                   }
                 ]
@@ -490,17 +412,15 @@
         "package": {},
         "memory": 192,
         "timeout": 10,
-        "runtime": "nodejs6.10",
-        "vpc": {},
-        "versionLogicalId": "ApiLambdaVersionY8FSdSNvmoZeLnNjaoGlHO34aZIQqIuMygE9tzjg"
+        "runtime": "nodejs10.x",
+        "vpc": {}
       }
     },
-    "serviceFilename": "serverless.yml",
     "layers": {},
     "artifact": "/Users/purnamagar/Documents/naturex/nature1618/.serverless/nature1618.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/nature1618/production/1579392486328-2020-01-19T00:08:06.328Z",
+    "artifactDirectoryName": "serverless/nature1618/production/1579742348199-2020-01-23T01:19:08.199Z",
     "artifact": "nature1618.zip"
   }
 }
