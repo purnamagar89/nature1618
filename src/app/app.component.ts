@@ -1,5 +1,5 @@
-import { isPlatformBrowser , DOCUMENT} from '@angular/common';
 import { environment } from '../environments/environment';
+import { isPlatformBrowser , DOCUMENT} from '@angular/common';
 import { Component , OnInit, Inject, PLATFORM_ID} from '@angular/core';
 
 @Component({
@@ -17,7 +17,19 @@ export class AppComponent implements OnInit {
                 bases[0].setAttribute('href', environment.baseHref);
             }
         }
+    if (!isPlatformBrowser(this.platformId)) {
+    const bases = this.document.getElementsByTagName('base');
+
+    if (bases.length > 0) {
+        bases[0].setAttribute('href', environment.baseHref);
     }
+}if (!isPlatformBrowser(this.platformId)) {
+    const bases = this.document.getElementsByTagName('base');
+
+    if (bases.length > 0) {
+        bases[0].setAttribute('href', environment.baseHref);
+    }
+}}
 
  constructor(@Inject(PLATFORM_ID) private platformId: any, @Inject(DOCUMENT) private document: any) {}
 }

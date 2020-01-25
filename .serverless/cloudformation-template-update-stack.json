@@ -19,7 +19,7 @@
     "ApiLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/nature1618-production-api"
+        "LogGroupName": "/aws/lambda/naturephi-production-api"
       }
     },
     "IamRoleLambdaExecution": {
@@ -48,7 +48,7 @@
                 "-",
                 [
                   "production",
-                  "nature1618",
+                  "naturephi",
                   "lambda"
                 ]
               ]
@@ -63,7 +63,7 @@
                   ],
                   "Resource": [
                     {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/nature1618-production-api:*"
+                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/naturephi-production-api:*"
                     }
                   ]
                 },
@@ -74,7 +74,7 @@
                   ],
                   "Resource": [
                     {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/nature1618-production-api:*:*"
+                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/naturephi-production-api:*:*"
                     }
                   ]
                 }
@@ -87,7 +87,7 @@
           "Fn::Join": [
             "-",
             [
-              "nature1618",
+              "naturephi",
               "production",
               "eu-central-1",
               "lambdaRole"
@@ -103,11 +103,11 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/nature1618/production/1579742348199-2020-01-23T01:19:08.199Z/nature1618.zip"
+          "S3Key": "serverless/naturephi/production/1579928109156-2020-01-25T04:55:09.156Z/naturephi.zip"
         },
-        "FunctionName": "nature1618-production-api",
+        "FunctionName": "naturephi-production-api",
         "Handler": "lambda.universal",
-        "MemorySize": 192,
+        "MemorySize": 512,
         "Role": {
           "Fn::GetAtt": [
             "IamRoleLambdaExecution",
@@ -122,20 +122,20 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "ApiLambdaVersionqFmlRElH8OsGBEzV8LEALrXJU0TDKCdd1yOZqOlQ2M": {
+    "ApiLambdaVersionOzIng4sSxxNKB8eKDjNd3aucKWOBfhuKkr1F8TjjLs": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ApiLambdaFunction"
         },
-        "CodeSha256": "UVVxDI0Z7b0WlklfTq7MWLdpu/UAorlDLyyciP3y5NU="
+        "CodeSha256": "ZZJjWxsK1pRTSvHtmOEapbKK19+UBHP6lbJcVRM/zuY="
       }
     },
     "ApiGatewayRestApi": {
       "Type": "AWS::ApiGateway::RestApi",
       "Properties": {
-        "Name": "production-nature1618",
+        "Name": "production-naturephi",
         "EndpointConfiguration": {
           "Types": [
             "EDGE"
@@ -247,7 +247,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1579742272779": {
+    "ApiGatewayDeployment1579928036322": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -317,7 +317,7 @@
     "ApiLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ApiLambdaVersionqFmlRElH8OsGBEzV8LEALrXJU0TDKCdd1yOZqOlQ2M"
+        "Ref": "ApiLambdaVersionOzIng4sSxxNKB8eKDjNd3aucKWOBfhuKkr1F8TjjLs"
       }
     },
     "ServiceEndpoint": {

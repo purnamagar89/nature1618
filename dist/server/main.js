@@ -315,8 +315,8 @@ exports.AppComponentNgFactory = AppComponentNgFactory;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var common_1 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var environment_1 = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+var common_1 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var AppComponent = /** @class */ (function () {
     function AppComponent(platformId, document) {
@@ -324,6 +324,18 @@ var AppComponent = /** @class */ (function () {
         this.document = document;
     }
     AppComponent.prototype.ngOnInit = function () {
+        if (!common_1.isPlatformBrowser(this.platformId)) {
+            var bases = this.document.getElementsByTagName('base');
+            if (bases.length > 0) {
+                bases[0].setAttribute('href', environment_1.environment.baseHref);
+            }
+        }
+        if (!common_1.isPlatformBrowser(this.platformId)) {
+            var bases = this.document.getElementsByTagName('base');
+            if (bases.length > 0) {
+                bases[0].setAttribute('href', environment_1.environment.baseHref);
+            }
+        }
         if (!common_1.isPlatformBrowser(this.platformId)) {
             var bases = this.document.getElementsByTagName('base');
             if (bases.length > 0) {
@@ -870,7 +882,7 @@ exports.OurWorkComponent = OurWorkComponent;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.environment = {
     production: true,
-    baseHref: '/'
+    baseHref: '/production/'
 };
 /*
 Copyright Google LLC. All Rights Reserved.
