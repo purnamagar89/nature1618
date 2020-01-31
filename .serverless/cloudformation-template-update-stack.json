@@ -103,7 +103,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/naturephi/production/1580440522020-2020-01-31T03:15:22.020Z/naturephi.zip"
+          "S3Key": "serverless/naturephi/production/1580443991605-2020-01-31T04:13:11.605Z/naturephi.zip"
         },
         "FunctionName": "naturephi-production-api",
         "Handler": "lambda.universal",
@@ -122,14 +122,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "ApiLambdaVersionINOhNDu3xCQ9pgrJatyWim7ozMtzdrRgvqqQFyiaTi8": {
+    "ApiLambdaVersionTRwGp0TGsEk22TzP3BlPvGI37JenWFJawlpKCBY": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ApiLambdaFunction"
         },
-        "CodeSha256": "QbjzMSx32nPUM6vF9kqMAXnry3nfj9KEvlDDtMX+8ag="
+        "CodeSha256": "ik61oZ3uQy284a/Cxc6BzgQpsx20ckBGp1o8CT5cQRA="
       }
     },
     "ApiGatewayRestApi": {
@@ -247,7 +247,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1580440446919": {
+    "ApiGatewayDeployment1580443906979": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -317,7 +317,7 @@
     "ApiLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ApiLambdaVersionINOhNDu3xCQ9pgrJatyWim7ozMtzdrRgvqqQFyiaTi8"
+        "Ref": "ApiLambdaVersionTRwGp0TGsEk22TzP3BlPvGI37JenWFJawlpKCBY"
       }
     },
     "ServiceEndpoint": {
