@@ -1,3 +1,6 @@
+.hero-image{
+    margin-bottom: 100px;
+  }
 img {
     margin: 0;
     padding: 0;
@@ -29,3 +32,44 @@ img {
         font-size: 28px;
 
     }
+
+    @media screen and (max-width: 768px) {
+        .row {
+          flex-direction: column;
+        }
+      
+        .column {
+          margin-top: 60px;
+        }
+      
+        .hero-image{
+          margin-bottom: 60px;
+        }
+        .help-desc{
+            margin-bottom: 0;
+        }
+
+        .about-description p{
+            font-size: 18px;
+            text-align: left;
+            position: relative;
+            padding: 10;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-bottom: 20px;
+            display: block;
+            flex-direction: row;
+        
+            }
+        
+            .about-description h1{
+                text-align: left;
+                position: relative;
+                margin-left: 10%;
+                padding: 10;
+                display: block;
+                line-height: 2em;
+                font-size: 28px;
+        
+            }
+      }

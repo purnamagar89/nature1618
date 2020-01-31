@@ -95,6 +95,11 @@
     text-align:center;
     margin-left: -400px;
   }
+
+  .app-footer
+{
+  margin-top: -50px;
+}
 }
 .social-icons
 {
@@ -145,7 +150,7 @@
 {
   background-color:#00aced
 }
-@media (max-width:767px)
+@media (max-width:768px)
 {
   .social-icons li.title
   {
@@ -153,4 +158,11 @@
     margin-right:0;
     font-weight:600
   }
+  @media (max-width:768px)
+{
+  .app-footer 
+  {
+    margin-top:-40px
+  }
+}
 }

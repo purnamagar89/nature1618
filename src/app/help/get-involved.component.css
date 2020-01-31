@@ -1,9 +1,16 @@
+.hero-image{
+    margin-bottom: 100px;
+  }
 img {
     margin: 0;
     padding: 0;
     width: 100%;
     position: relative;
     z-index: -1;
+    }
+
+    .help-desc{
+        margin-bottom: 100px;
     }
 
     .help-desc p{
@@ -13,7 +20,6 @@ img {
         padding: 15;
         margin-right: 20%;
         margin-left: 20%;
-        margin-bottom: 20px;
         display: block;
         flex-direction: row;
     
@@ -22,9 +28,46 @@ img {
         .help-desc h1{
             text-align: center;
             position: relative;
-            padding: 15;
             display: block;
             line-height: 2em;
             font-size: 28px;
     
         }
+
+        @media screen and (max-width: 768px) {
+            .row {
+              flex-direction: column;
+            }
+          
+            .column {
+              margin-top: 60px;
+            }
+          
+            .hero-image{
+              margin-bottom: 0px;
+            }
+            .help-desc{
+                margin-bottom: 0;
+            }
+
+            .help-desc p{
+                font-size: 18px;
+                text-align: center;
+                position: relative;
+                padding: 15;
+                margin-right: 10%;
+                margin-left: 10%;
+                display: block;
+                flex-direction: row;
+            
+                }
+            
+                .help-desc h1{
+                    text-align: center;
+                    position: relative;
+                    display: block;
+                    line-height: 2em;
+                    font-size: 28px;
+            
+                }
+          }
