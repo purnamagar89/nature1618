@@ -9,7 +9,7 @@
 
 .r1-p{
   position: relative;
-  top: 8%;
+  top: 5%;
   padding: 0;
   margin-right: 10%;
   margin-left: 10%;
@@ -67,15 +67,15 @@ z-index: -1;
   }
 
   .r1-p{
-    top: 4%;
-    margin-right: 10%;
-    margin-left: 10%;
+    top: 2%;
+    margin-right: 8%;
+    margin-left: 8%;
   }
   
   .r2-p{
     top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;  
+    margin-left: 8%;
+    margin-right: 8%;  
   }
 
   

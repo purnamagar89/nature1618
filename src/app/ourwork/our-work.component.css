@@ -26,13 +26,25 @@ img {
     font-size: 18px;
     text-align: center;
     position: relative;
-    padding: 15;
-    margin-right: 20%;
-    margin-left: 20%;
+    padding: 10px;
+    margin-right: 12%;
+    margin-left: 12%;
     display: block;
     flex-direction: row;
 
     }
+
+    .ourwork-desc2 p{
+      font-size: 18px;
+      text-align: center;
+      position: relative;
+      padding: 10px;
+      margin-right: 5%;
+      margin-left: 5%;
+      display: block;
+      flex-direction: row;
+  
+      }
     
 
     .ourwork-desc h1{
@@ -96,6 +108,17 @@ img {
     flex-direction: row;
 
     }
+    .ourwork-desc2 p{
+      font-size: 18px;
+      text-align: center;
+      position: relative;
+      padding: 10px;
+      margin-right: 10%;
+      margin-left: 10%;
+      display: block;
+      flex-direction: row;
+  
+      }
 
     .ourwork-desc h1{
         text-align: center;

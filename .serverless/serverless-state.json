@@ -119,7 +119,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/naturephi/production/1580443991605-2020-01-31T04:13:11.605Z/naturephi.zip"
+                "S3Key": "serverless/naturephi/production/1580875067428-2020-02-05T03:57:47.428Z/naturephi.zip"
               },
               "FunctionName": "naturephi-production-api",
               "Handler": "lambda.universal",
@@ -138,14 +138,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "ApiLambdaVersionTRwGp0TGsEk22TzP3BlPvGI37JenWFJawlpKCBY": {
+          "ApiLambdaVersionZbMUkptQJtNYwGKdfs8Pw674JxDPmzpQtAhEtmmcY": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "ik61oZ3uQy284a/Cxc6BzgQpsx20ckBGp1o8CT5cQRA="
+              "CodeSha256": "QnCHb59d3mjSOA6sNqR4Tqb5l3mByM848YVC+LXj0pI="
             }
           },
           "ApiGatewayRestApi": {
@@ -263,7 +263,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1580443906979": {
+          "ApiGatewayDeployment1580874974822": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -333,7 +333,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersionTRwGp0TGsEk22TzP3BlPvGI37JenWFJawlpKCBY"
+              "Ref": "ApiLambdaVersionZbMUkptQJtNYwGKdfs8Pw674JxDPmzpQtAhEtmmcY"
             }
           },
           "ServiceEndpoint": {
@@ -387,6 +387,11 @@
       "vpc": {}
     },
     "custom": {
+      "customDomain": {
+        "domainName": "nature1618.org",
+        "basePath": "",
+        "createRoute53Record": true
+      },
       "apigwBinary": {
         "types": [
           "*/*"
@@ -394,6 +399,7 @@
       }
     },
     "plugins": [
+      "serverless-domain-manager",
       "serverless-apigw-binary"
     ],
     "pluginsData": {},
@@ -420,7 +426,7 @@
     "artifact": "/Users/purnamagar/Documents/naturex/nature1618/.serverless/naturephi.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/naturephi/production/1580443991605-2020-01-31T04:13:11.605Z",
+    "artifactDirectoryName": "serverless/naturephi/production/1580875067428-2020-02-05T03:57:47.428Z",
     "artifact": "naturephi.zip"
   }
 }

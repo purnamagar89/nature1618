@@ -40,25 +40,25 @@
 .footer-links
 {
   padding-left:0;
-  list-style:none
+  list-style:none;
+  
 }
 .footer-links li
 {
-  display:block
+  display:block;
+  margin-bottom: 8px;
 }
-.footer-links a
+.footer-links li a
 {
-  color:whitesmoke
+  color:whitesmoke;
+  
 }
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+.footer-links li a:hover
 {
   color:#49a942;
   text-decoration:none;
 }
-.footer-links.inline li
-{
-  display:inline-block
-}
+
 .app-footer .social-icons
 {
   text-align:left;
@@ -110,16 +110,9 @@
 .social-icons li
 {
   display:inline-block;
-  margin-bottom:4px
+  margin-bottom:0px
 }
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
-}
+
 .social-icons a{
   background-color:#eceeef;
   color:#918881;
@@ -135,17 +128,30 @@
   -o-transition:all .2s linear;
   transition:all .2s linear
 }
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
+
+
+.facebook {
+  background-color:#31384d;
+  color:#918881;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
 }
-.social-icons a.facebook:hover
+
+ a.facebook:hover
 {
-  background-color:#3b5998
+  background-color:#2e4f96
 }
+
+
 .social-icons a.twitter:hover
 {
   background-color:#00aced

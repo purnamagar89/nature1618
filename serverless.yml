@@ -2,6 +2,7 @@
 service: naturephi
 
 plugins:
+  - serverless-domain-manager
   - serverless-apigw-binary
 
 provider:
@@ -26,7 +27,13 @@ package:
    - '!node_modules/mime-types/**'
    - '!node_modules/mime-db/**'
 
+
 custom:
+  customDomain:
+    domainName: nature1618.org
+    basePath: ''
+    createRoute53Record: true
+
   apigwBinary:
     types:
       - '*/*'
