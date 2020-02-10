@@ -34,10 +34,8 @@ import {
         transform: "translateX(+100%)"
       })),
       transition('hide => show', animate('800ms ease-in'))
-    ])
-  ]
-
-  
+    ]),
+  ] 
 })
 export class AppHomeComponent {
   state = 'hide'

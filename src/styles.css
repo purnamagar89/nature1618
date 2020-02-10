@@ -25,12 +25,13 @@ h2 {
   font-size: 20px;
 }
 
+
 h1, h2 {
   font-weight: lighter;
 }
 
 p {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* Hyperlink */
@@ -124,7 +125,7 @@ app-footer {
   position: relative
 }
 .hero-banner-header p{
-  font-size: 1.7vw;
+  font-size: 2.5vw;
   color: whitesmoke; 
   font-weight: bold;
 }

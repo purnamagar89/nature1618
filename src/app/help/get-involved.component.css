@@ -9,13 +9,16 @@ img {
     z-index: -1;
     }
 
+    h2{
+      color: #3c3c3c;
+    }
+
     .help-desc{
         margin-bottom: 100px;
     }
 
     .help-desc p{
-        font-size: 18px;
-        text-align: center;
+        text-align: left;
         position: relative;
         padding: 10px;
         margin-right: 10%;
@@ -25,12 +28,10 @@ img {
     
         }
     
-        .help-desc h1{
+        .help-desc h2{
             text-align: center;
             position: relative;
             display: block;
-            line-height: 2em;
-            font-size: 28px;
     
         }
 
@@ -51,23 +52,20 @@ img {
             }
 
             .help-desc p{
-                font-size: 18px;
-                text-align: center;
+                text-align: left;
                 position: relative;
                 padding: 10px;
-                margin-right: 10%;
-                margin-left: 10%;
+                margin-right: 7%;
+                margin-left: 7%;
                 display: block;
                 flex-direction: row;
             
                 }
             
-                .help-desc h1{
-                    text-align: center;
-                    position: relative;
-                    display: block;
-                    line-height: 2em;
-                    font-size: 28px;
+                .help-desc h2{
+                    text-align: left;
+                    margin-left: 7%;
+                    padding: 10px;
             
                 }
           }
