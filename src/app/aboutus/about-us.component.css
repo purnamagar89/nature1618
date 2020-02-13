@@ -8,28 +8,21 @@ img {
     position: relative;
     z-index: -1;
     }
-    h2{
-      color: #3c3c3c;
-    }
+  
 
-    .about-description p{
-    text-align: left;
+    .about-page-desc{
     position: relative;
-    padding: 10px;
-    margin-right: 10%;
-    margin-left: 10%;
     display: block;
     flex-direction: row;
 
     }
 
-    .about-description h2{
-        text-align: left;
-        position: relative;
-        margin-left: 10%;
-        padding: 10px;
-        
+    .about-page-rows{
+      margin-right: 10%;
+      margin-left: 10%;
     }
+
+
 
     @media screen and (max-width: 768px) {
         .row {
@@ -43,26 +36,24 @@ img {
         .hero-image{
           margin-bottom: 60px;
         }
-        .help-desc{
-            margin-bottom: 0;
-        }
+    
 
-        .about-description p{
-            text-align: left;
+        .about-page- desc{
             position: relative;
-            padding: 10px;
-            margin-right: 7%;
-            margin-left: 7%;
             display: block;
             flex-direction: row;
         
+            }
+
+            .about-page-rows{
+              margin-right: 7%;
+              margin-left: 7%;
             }
         
             .about-description h2{
                 text-align: left;
                 position: relative;
                 margin-left: 7%;
-                padding: 10px;
                 display: block;
         
             }

@@ -2,7 +2,6 @@
 
 * {
   font-family: 'Whitney A','Whitney B',sans-serif;
-  color: #616161;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
@@ -41,7 +40,6 @@ h5{
   font-size: 18px;
   font-weight: bold;
   text-align: left;
-  color:#707070 !important;
 }
 
 

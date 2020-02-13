@@ -4,12 +4,14 @@
   background-color:#26272b;
   padding:45px 0 20px;
   font-size:15px;
-  line-height:24px;
   color:whitesmoke;
 }
 .app-footer p{
   color: whitesmoke;
   padding-right: 20px;
+}
+.app-footer h5{
+  line-height: 1.6;
 }
 .app-footer hr
 {
@@ -77,14 +79,14 @@
 {
   margin:0
 }
-@media (max-width:600px)
+@media (max-width:768px)
 {
   .app-footer [class^=col-]
   {
     margin-bottom:30px
   }
 }
-@media (max-width:600px)
+@media (max-width:768px)
 {
   .app-footer
   {
@@ -171,4 +173,5 @@
     margin-top:-40px
   }
 }
+
 }

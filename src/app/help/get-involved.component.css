@@ -9,33 +9,19 @@ img {
     z-index: -1;
     }
 
-    h2{
-      color: #3c3c3c;
-    }
 
-    .help-desc{
+    .help-page-desc{
         margin-bottom: 100px;
     }
 
-    .help-desc p{
-        text-align: left;
-        position: relative;
-        padding: 10px;
-        margin-right: 10%;
-        margin-left: 10%;
-        display: block;
-        flex-direction: row;
-    
-        }
-    
-        .help-desc h2{
-            text-align: center;
-            position: relative;
-            display: block;
-    
-        }
+    .help-page-rows{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
 
-        @media screen and (max-width: 768px) {
+    
+
+        @media screen and (max-width: 992px) {
             .row {
               flex-direction: column;
             }
@@ -47,25 +33,13 @@ img {
             .hero-image{
               margin-bottom: 0px;
             }
-            .help-desc{
+            .help-page-desc{
                 margin-bottom: 0;
             }
+            .help-page-rows{
+              margin-left: 7%;
+              margin-right: 7%;
+            }
 
-            .help-desc p{
-                text-align: left;
-                position: relative;
-                padding: 10px;
-                margin-right: 7%;
-                margin-left: 7%;
-                display: block;
-                flex-direction: row;
-            
-                }
-            
-                .help-desc h2{
-                    text-align: left;
-                    margin-left: 7%;
-                    padding: 10px;
-            
-                }
+          
           }
