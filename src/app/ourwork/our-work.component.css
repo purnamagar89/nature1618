@@ -2,32 +2,7 @@
   margin-bottom: 100px;
 }
 
-h2{
-  color: #3c3c3c;
-  text-align: center;
-}
 
-h3{
-  font-size: 18px;
-  font-weight: bold;
-  color: #3c3c3c;
-  
-}
-
-.ourwork-desc h3{
-  text-align: left;
-  margin-left: 10%;
-  margin-left: 10%;
-}
-
-.r2-p p{
-  text-align: left;
-}
-
-.work-r{
-  margin: 0;
-  padding: 0;
-}
 img {
   margin: 0;
   padding: 0;
@@ -36,27 +11,21 @@ img {
   z-index: -1;
   }
 
-  .ourwork-desc{
+  .ourwork-page-rows{
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .ourwork-page-row2{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .ourwork-page-desc{
     margin-bottom: 100px;
   }
 
-  .ourwork-desc p{
-    text-align: left;
-    position: relative;
-    padding: 10px;
-    margin-right: 12%;
-    margin-left: 12%;
-    display: block;
-    flex-direction: row;
 
-    }
-
-    .ourwork-desc h2{
-        text-align: center;
-        position: relative;
-        display: block;      
-
-    }
 
     
 /* Container for flexboxes */
@@ -71,7 +40,7 @@ img {
 
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .row {
     flex-direction: column;
   }
@@ -81,31 +50,22 @@ img {
   }
 
   .hero-image{
-    margin-bottom: 60px;
-  }
-
-  .ourwork-desc{
     margin-bottom: 0px;
   }
 
-  .ourwork-desc p{
-    text-align: left;
-    position: relative;
-    padding: 10px;
+  .ourwork-page-rows{
     margin-right: 7%;
     margin-left: 7%;
+  }
+
+  .ourwork-page-row2{
+    margin-right: 7%;
+    margin-left: 7%;
+  }
+  .ourwork-page-desc{
+    margin-bottom: 0;
+  }
   
-
-    }
-
-    .ourwork-desc h2{
-        margin-left: 7%;
-        padding: 10px;
-        text-align: left;
-        position: relative;
-        display: block;
-        
-    }
 
   
 }

@@ -2,47 +2,19 @@
   margin-bottom: 100px;
 }
 
-.home-desc{
+.home-page-desc{
   margin-bottom: 100px;
 }
 
-.r1-p{
-  position: relative;
-  top: 5%;
-  padding: 0;
-  margin-right: 10%;
-  margin-left: 10%;
-  display: block;
-  flex-direction: row;
-  text-align: left;
+.home-page-rows{
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
-.r2-p{
-  position: relative;
-  top: 40%;
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: left;
-}
-
-h2{
-  color: #3c3c3c;
-}
-
-
-#r1-h2{
-  text-align: center;
-  margin-top: 0;
-}
-
-#r2-h2{
-  text-align: center;
-  margin-top: 10%;
-  
-  }
-
-h1{
-  text-align: center;
+.home-page-row2{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 20%;
 }
 
 
@@ -64,7 +36,7 @@ z-index: -1;
 }
 
 /* On screens that are 768px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .row {
     flex-direction: column;
   }
@@ -77,33 +49,13 @@ z-index: -1;
     margin-bottom: 0px;
   }
 
-  .r1-p{
-    top: 2%;
-    text-align: left;
+  .home-page-row2{
+    margin-left: 7%;
     margin-right: 7%;
-    margin-left: 7%;
-  }
-  
-  .r2-p{
-    top: 2%;
-    margin-left: 10%;
-    margin-right: 10%;  
-    text-align: left;
-  }
-  
-  #r1-h2{
-    text-align: left;
-    margin-left: 7%;
     margin-top: 0;
-    
-    }
-    
-    #r2-h2{
-      text-align: left;
-      margin-left: 10%;
-      margin-top: 0;
-      
-    }  
+  }
+  
+  
 }
 
 @media screen and (max-width: 1092px) {
