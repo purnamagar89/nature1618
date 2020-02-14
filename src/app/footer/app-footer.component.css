@@ -92,6 +92,14 @@
   {
     padding-bottom:0
   }
+
+  .app-footer h6
+{
+  color:whitesmoke;
+  font-size:15px;
+  text-transform:uppercase;
+  
+}
   .app-footer .social-icons
   {
     text-align:center;
@@ -100,7 +108,7 @@
 
   .app-footer
 {
-  margin-top: -50px;
+  margin-top: 0px;
 }
 }
 .social-icons
@@ -153,7 +161,6 @@
   background-color:#2e4f96
 }
 
-
 .social-icons a.twitter:hover
 {
   background-color:#00aced
@@ -170,7 +177,7 @@
 {
   .app-footer 
   {
-    margin-top:-40px
+    margin-top:-55px
   }
 }
 

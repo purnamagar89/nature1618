@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1581296007583,
+  "timestamp": 1581653869117,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -9,12 +9,12 @@
       "updateMode": "prefetch",
       "urls": [
         "/index.html",
-        "/main.09382f45e0e8e326801c.js",
+        "/main.9bc6942890a3f22602bd.js",
         "/manifest.webmanifest",
         "/polyfills-es5.05dfe80fa9cd564de130.js",
         "/polyfills.6639e5a88181fd1aa707.js",
         "/runtime.a8ef3a8272419c2e2c66.js",
-        "/styles.06bb91d5720075c51c88.css"
+        "/styles.d2f8f3d87a53ceadd773.css"
       ],
       "patterns": []
     },
@@ -25,7 +25,7 @@
       "urls": [
         "/assets/6.JPEG",
         "/assets/hero-image.JPG",
-        "/assets/hero-img-about.jpg",
+        "/assets/hero-img-about.JPG",
         "/assets/hero-img-help.JPG",
         "/assets/hero-img-help5.JPG",
         "/assets/hero-img-ourwork.JPG",
@@ -47,7 +47,7 @@
   "hashTable": {
     "/assets/6.JPEG": "f24c57bd453a8818f7543c16685a29276448333d",
     "/assets/hero-image.JPG": "ddbe213bfd36afbccac2154fb05a5104f3bb1ab3",
-    "/assets/hero-img-about.jpg": "f9bed7c9ee02c8276143b183a1585514c16de3f8",
+    "/assets/hero-img-about.JPG": "f9bed7c9ee02c8276143b183a1585514c16de3f8",
     "/assets/hero-img-help.JPG": "dccf584bd5646827f48ac135dcef66816e37b8b8",
     "/assets/hero-img-help5.JPG": "5f13ee64d3e5d5d7a57c69002b24f93364cd639c",
     "/assets/hero-img-ourwork.JPG": "3f713cb581c79856e15da0bed5221c0eb2753a7f",
@@ -61,13 +61,13 @@
     "/glyphicons-halflings-regular.e18bbf611f2a2e43afc0.ttf": "44bc1850f570972267b169ae18f1cb06b611ffa2",
     "/glyphicons-halflings-regular.f4769f9bdb7466be6508.eot": "86b6f62b7853e67d3e635f6512a5a5efc58ea3c3",
     "/glyphicons-halflings-regular.fa2772327f55d8198301.woff": "278e49a86e634da6f2a02f3b47dd9d2a8f26210f",
-    "/index.html": "615a477aeb241f8315de5fd03c17618719d1ec97",
-    "/main.09382f45e0e8e326801c.js": "e7e22a94ba4d2fcdd4a38f9bbca669024b0bd0fc",
+    "/index.html": "49b43ae50cf599215d43d49eab04edc5a9369086",
+    "/main.9bc6942890a3f22602bd.js": "bde2831e9ab6015649e53443e3201398e60fe5a5",
     "/manifest.webmanifest": "9457e15d9d5019ebbcb156b90f23dce938e7085f",
     "/polyfills-es5.05dfe80fa9cd564de130.js": "2c1496623876a90a7af3b8ae8f445de34c3006db",
     "/polyfills.6639e5a88181fd1aa707.js": "a21062bebc5610b4372b6638679b27dddb98a350",
     "/runtime.a8ef3a8272419c2e2c66.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/styles.06bb91d5720075c51c88.css": "59a80bb27a3362a5fc4e6478315046fec06aa187"
+    "/styles.d2f8f3d87a53ceadd773.css": "7866cefb333c706b224cc9eee603dbcfae06f144"
   },
   "navigationUrls": [
     {

@@ -1,3 +1,20 @@
+h2 {
+  color:#3c3c3c !important;
+  font-size: 32px;
+  line-height: 1.4;
+ 
+}
+
+h4{
+  font-size: 18px;
+  text-align: left;
+  color:#707070 !important;
+  line-height: 1.4;
+}
+
+p{
+  line-height: 1.6;
+}
 .hero-image{
   margin-bottom: 100px;
 }
@@ -41,12 +58,24 @@ img {
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 992px) {
+
+  h2 {
+    color:#3c3c3c !important;
+    font-size: 28px;
+   
+  }
+  
+  h4{
+    font-size: 16px;
+    text-align: left;
+    color:#707070 !important;
+  }
   .row {
     flex-direction: column;
   }
 
   .column {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .hero-image{
@@ -54,13 +83,13 @@ img {
   }
 
   .ourwork-page-rows{
-    margin-right: 7%;
-    margin-left: 7%;
+    margin-right: 8%;
+    margin-left: 8%;
   }
 
   .ourwork-page-row2{
-    margin-right: 7%;
-    margin-left: 7%;
+    margin-right: 8%;
+    margin-left: 8%;
   }
   .ourwork-page-desc{
     margin-bottom: 0;
