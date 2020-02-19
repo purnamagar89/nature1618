@@ -1,0 +1,184 @@
+.app-footer
+{
+  width: 100%;
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  color:whitesmoke;
+}
+.app-footer p{
+  color: whitesmoke;
+  padding-right: 20px;
+}
+.app-footer h5{
+  line-height: 1.6;
+}
+.app-footer hr
+{
+  border-top-color:whitesmoke;
+  opacity:0.5
+}
+.app-footer hr.small
+{
+  margin:20px 0
+}
+.app-footer h6
+{
+  color:whitesmoke;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.app-footer a
+{
+  color:whitesmoke;
+}
+.app-footer a:hover
+{
+  color:#49a942;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none;
+  
+}
+.footer-links li
+{
+  display:block;
+  margin-bottom: 8px;
+}
+.footer-links li a
+{
+  color:whitesmoke;
+  
+}
+.footer-links li a:hover
+{
+  color:#49a942;
+  text-decoration:none;
+}
+
+.app-footer .social-icons
+{
+  text-align:left;
+}
+.app-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:768px)
+{
+  .app-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:768px)
+{
+  .app-footer
+  {
+    padding-bottom:0
+  }
+
+  .app-footer h6
+{
+  color:whitesmoke;
+  font-size:15px;
+  text-transform:uppercase;
+  
+}
+  .app-footer .social-icons
+  {
+    text-align:center;
+    margin-left: -400px;
+  }
+
+  .app-footer
+{
+  margin-top: 0px;
+}
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:0px
+}
+
+.social-icons a{
+  background-color:#eceeef;
+  color:#918881;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+
+.facebook {
+  background-color:#31384d;
+  color:#918881;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+ a.facebook:hover
+{
+  background-color:#2e4f96
+}
+
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+@media (max-width:768px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+  @media (max-width:768px)
+{
+  .app-footer 
+  {
+    margin-top:-55px
+  }
+}
+
+}

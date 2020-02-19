@@ -1,9 +1,108 @@
-h2{
-    color:black;
+h2 {
+  color:#3c3c3c !important;
+  font-size: 32px;
+  line-height: 1.4;
+ 
 }
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
+h4{
+  font-size: 18px;
+  text-align: left;
+  color:#707070 !important;
+  line-height: 1.4;
+}
+
+p{
+  line-height: 1.6;
+}
+
+
+.hero-image{
+  margin-bottom: 100px;
+}
+
+.home-page-desc{
+  margin-bottom: 100px;
+}
+
+.home-page-rows{
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.home-page-row2{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 20%;
+}
+
+
+img {
+width: 100%;
+position: relative;
+z-index: -1;
+}
+
+
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Create four equal columns */
+.column {
+  flex: 50%;
+}
+
+/* On screens that are 768px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 992px) {
+
+  h2 {
+    color:#3c3c3c !important;
+    font-size: 26px;
+   
+  }
+  
+  h4{
+    font-size: 16px;
+    text-align: left;
+    color:#707070 !important;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    margin-top: 40px;
+  }
+
+  .hero-image{
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .home-page-row2{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 0;
+  }
+  
+  
+}
+
+@media screen and (max-width: 1092px) {
+
+  .home-desc{
+    margin-bottom: 0;
+  }
+  
+  
+}
+
+
+
+
+
+
+
+

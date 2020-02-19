@@ -1,33 +1,19 @@
-  <div class="app-header header-left-div">
+<div class="header-navbar" id="topnavbar">
+  <div><a  href="" style="margin-top: -10px; margin-bottom: -15px;">
+      <img class="header-img" src="/assets/logo.JPG" alt="image"></a>
   </div>
-  <div class="header header-center-div">
-    <ul>
-      <li>
-        <a routerLink="ourstories" routerLinkActive="active">
-          OUR STORY
-        </a>
-      </li>
+  <a id="row1" href="" class="active">HOME</a>
+  <a style="margin-bottom: -7px;" href="ourwork" class="active">OUR WORK</a>
+  <a style="margin-bottom: -7px;" href="getinvolved" class="active">GET INVOLVED</a>
+  <a style="margin-bottom: -4px;" href="aboutus" class="active">ABOUT US</a>
 
-      <li>
-        <a routerLink="howwework" routerLinkActive="active">
-          HOW IT WORKS
-        </a>
-      </li>
-
-      <li>
-        <a routerLink="ourprojects" routerLinkActive="active">
-          PROJECTS
-        </a>
-      </li>
-
-      <li>
-        <a routerLink="getinvolved" routerLinkActive="active">
-          GET INVOLVED
-        </a>
-      </li>
-    </ul>
-
+  <a id="donate-button-link" aria-label="Donate"
+    href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=74F8WBMBZHWD4&source=url"
+    target="_blank">
+    Donate
+  </a>
+  <div>
+    <a href="javascript:void(0);" class="icon"
+      (click)="openNav()">&#9776;</a>
   </div>
-
-  <div class="header header-right-div">
-  </div>
+</div>
