@@ -161,11 +161,6 @@ app-footer {
     color: whitesmoke;
 }
 @media screen and (max-width: 992px) {
-
-  .hero-banner-header{
-    margin-top: 4%;
-  }
-
   .hero-banner-header h1{
     font-size:28px;
     
@@ -173,7 +168,7 @@ app-footer {
   .hero-banner-header h3{
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   
   .header-link-divider{
@@ -197,7 +192,7 @@ app-footer {
   .hero-banner-header h3{
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
   
   .header-link-divider{

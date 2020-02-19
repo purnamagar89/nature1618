@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1581653869117,
+  "timestamp": 1582081899289,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -9,12 +9,12 @@
       "updateMode": "prefetch",
       "urls": [
         "/index.html",
-        "/main.9bc6942890a3f22602bd.js",
+        "/main.aa68c344328bc53396a2.js",
         "/manifest.webmanifest",
         "/polyfills-es5.05dfe80fa9cd564de130.js",
         "/polyfills.6639e5a88181fd1aa707.js",
         "/runtime.a8ef3a8272419c2e2c66.js",
-        "/styles.d2f8f3d87a53ceadd773.css"
+        "/styles.ccbfe2a07ae09c60d62b.css"
       ],
       "patterns": []
     },
@@ -23,15 +23,13 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
-        "/assets/6.JPEG",
-        "/assets/hero-image.JPG",
+        "/assets/hero-image.jpg",
+        "/assets/hero-image2.JPG",
         "/assets/hero-img-about.JPG",
-        "/assets/hero-img-help.JPG",
-        "/assets/hero-img-help5.JPG",
-        "/assets/hero-img-ourwork.JPG",
-        "/assets/hero-img-ourwork3.JPG",
+        "/assets/hero-img-help.jpg",
+        "/assets/hero-img-ourwork.jpg",
         "/assets/home-img1.jpg",
-        "/assets/home-img2.JPG",
+        "/assets/home-img2.jpg",
         "/assets/logo.JPG",
         "/assets/ourwork-img1.jpg",
         "/glyphicons-halflings-regular.448c34a56d699c29117a.woff2",
@@ -45,29 +43,27 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/assets/6.JPEG": "f24c57bd453a8818f7543c16685a29276448333d",
-    "/assets/hero-image.JPG": "ddbe213bfd36afbccac2154fb05a5104f3bb1ab3",
+    "/assets/hero-image.jpg": "ff1f35474b5bf91bb944da8d9b8417324fb834e6",
+    "/assets/hero-image2.JPG": "5f31bc62704d0599d48a10d15975b1e04c3182fa",
     "/assets/hero-img-about.JPG": "f9bed7c9ee02c8276143b183a1585514c16de3f8",
-    "/assets/hero-img-help.JPG": "dccf584bd5646827f48ac135dcef66816e37b8b8",
-    "/assets/hero-img-help5.JPG": "5f13ee64d3e5d5d7a57c69002b24f93364cd639c",
-    "/assets/hero-img-ourwork.JPG": "3f713cb581c79856e15da0bed5221c0eb2753a7f",
-    "/assets/hero-img-ourwork3.JPG": "c1d2e22869ce6ecc6d7906db627062fc408a393f",
-    "/assets/home-img1.jpg": "e0058c3352b645a2a20697153cce5af9e8fba7c8",
-    "/assets/home-img2.JPG": "ded4bb15e2d6798dc1260c3417ddf2e62673e0b4",
+    "/assets/hero-img-help.jpg": "7ac2041492b17d778e899af18b52cfab23b41876",
+    "/assets/hero-img-ourwork.jpg": "12818a9dda4b16a6ba8dba314b475771bc90a4cc",
+    "/assets/home-img1.jpg": "35f9c21f4f59fe5bc067e560a1b604f069f423f4",
+    "/assets/home-img2.jpg": "155f2aa0a62796c1b736f453a19ac829a86cd32c",
     "/assets/logo.JPG": "1f7e59a89c7946ce09be7ababb065c7cd757ee9e",
-    "/assets/ourwork-img1.jpg": "786c4a521511e7d3e6696c105744ce8f68ef2b6d",
+    "/assets/ourwork-img1.jpg": "28ec8bb4c1a8a6cb89a08cd31bfd23af40d669c1",
     "/glyphicons-halflings-regular.448c34a56d699c29117a.woff2": "ca35b697d99cae4d1b60f2d60fcd37771987eb07",
     "/glyphicons-halflings-regular.89889688147bd7575d63.svg": "de51a8494180a6db074af2dee2383f0a363c5b08",
     "/glyphicons-halflings-regular.e18bbf611f2a2e43afc0.ttf": "44bc1850f570972267b169ae18f1cb06b611ffa2",
     "/glyphicons-halflings-regular.f4769f9bdb7466be6508.eot": "86b6f62b7853e67d3e635f6512a5a5efc58ea3c3",
     "/glyphicons-halflings-regular.fa2772327f55d8198301.woff": "278e49a86e634da6f2a02f3b47dd9d2a8f26210f",
-    "/index.html": "49b43ae50cf599215d43d49eab04edc5a9369086",
-    "/main.9bc6942890a3f22602bd.js": "bde2831e9ab6015649e53443e3201398e60fe5a5",
+    "/index.html": "733264e03b3b63b6ebb378ac4870b20e7560d47d",
+    "/main.aa68c344328bc53396a2.js": "9f4ed71c4bfccefe66e3144afbfeeebe908a9a05",
     "/manifest.webmanifest": "9457e15d9d5019ebbcb156b90f23dce938e7085f",
     "/polyfills-es5.05dfe80fa9cd564de130.js": "2c1496623876a90a7af3b8ae8f445de34c3006db",
     "/polyfills.6639e5a88181fd1aa707.js": "a21062bebc5610b4372b6638679b27dddb98a350",
     "/runtime.a8ef3a8272419c2e2c66.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/styles.d2f8f3d87a53ceadd773.css": "7866cefb333c706b224cc9eee603dbcfae06f144"
+    "/styles.ccbfe2a07ae09c60d62b.css": "d2c94910226ff896f4aa238e70d053aa2d59939a"
   },
   "navigationUrls": [
     {
