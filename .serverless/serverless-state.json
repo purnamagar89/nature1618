@@ -119,7 +119,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/naturephi/production/1582082023419-2020-02-19T03:13:43.419Z/naturephi.zip"
+                "S3Key": "serverless/naturephi/production/1605306597345-2020-11-13T22:29:57.345Z/naturephi.zip"
               },
               "FunctionName": "naturephi-production-api",
               "Handler": "lambda.universal",
@@ -138,14 +138,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "ApiLambdaVersionsCoM8eEH7Kf74fKwJTEmDtKXxzscM2hsDHJL89DER8": {
+          "ApiLambdaVersiona2zfTgFG7dPDLMbFCgCjSqtzLt4XRsRWDxV9mzWg8ss": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "R2Tt24y9gE3ri4soGMjUoacQSYCgc0LsADHlHGwXMrM="
+              "CodeSha256": "ZiN7fiaCIn2lyzvnMyQqRYNWVPIFp8PKwwx5tzt7V/E="
             }
           },
           "ApiGatewayRestApi": {
@@ -263,7 +263,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1582081926578": {
+          "ApiGatewayDeployment1605306502509": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -333,7 +333,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersionsCoM8eEH7Kf74fKwJTEmDtKXxzscM2hsDHJL89DER8"
+              "Ref": "ApiLambdaVersiona2zfTgFG7dPDLMbFCgCjSqtzLt4XRsRWDxV9mzWg8ss"
             }
           },
           "ServiceEndpoint": {
@@ -426,7 +426,7 @@
     "artifact": "/Users/purnamagar/Documents/naturex/nature1618/.serverless/naturephi.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/naturephi/production/1582082023419-2020-02-19T03:13:43.419Z",
+    "artifactDirectoryName": "serverless/naturephi/production/1605306597345-2020-11-13T22:29:57.345Z",
     "artifact": "naturephi.zip"
   }
 }
