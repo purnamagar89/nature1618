@@ -1,9 +1,10 @@
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -18,16 +19,16 @@ import { AppFooterComponent } from './footer/app-footer.component';
 
 
 @NgModule({
-  imports:[
- CommonModule,
-NgtUniversalModule,
- 
-    
+  imports: [
+    CommonModule,
+    NgtUniversalModule,
+    BrowserModule,
+    MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
     AppRoutingModule,
-    
+
   ],
   declarations: [
     AppComponent,
@@ -39,5 +40,8 @@ NgtUniversalModule,
     OurWorkComponent,
     GetInvolvedComponent
   ],
+  providers: [],
+  bootstrap: [AppComponent],
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule { }

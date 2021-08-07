@@ -1,0 +1,107 @@
+h2 {
+  color:#3c3c3c !important;
+  font-size: 32px;
+  line-height: 1.4;
+ 
+}
+
+h4{
+  font-size: 18px;
+  text-align: left;
+  color:#707070 !important;
+  line-height: 1.4;
+}
+
+p{
+  line-height: 1.6;
+}
+.hero-image{
+  margin-bottom: 100px;
+}
+
+
+img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  }
+
+  .ourwork-page-rows{
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .ourwork-page-row2{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .ourwork-page-desc{
+    margin-bottom: 100px;
+  }
+
+.img-slide{
+  margin-top: 40px;
+}
+
+    
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Create four equal columns */
+.column {
+  flex: 50%;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 992px) {
+
+  h2 {
+    color:#3c3c3c !important;
+    font-size: 28px;
+   
+  }
+  
+  h4{
+    font-size: 16px;
+    text-align: left;
+    color:#707070 !important;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    margin-top: 40px;
+  }
+
+  .hero-image{
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .ourwork-page-rows{
+    margin-right: 8%;
+    margin-left: 8%;
+  }
+
+  .ourwork-page-row2{
+    margin-right: 8%;
+    margin-left: 8%;
+  }
+  .ourwork-page-desc{
+    margin-bottom: 0;
+  }
+  
+
+  
+}
+    

@@ -10,7 +10,7 @@ import {
 @Component({
   selector: 'how-wework',
   templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.css'],
+  styleUrls: ['./about-us.component.scss'],
   animations: [
     trigger('scrollAnimation', [
       state('show', style({

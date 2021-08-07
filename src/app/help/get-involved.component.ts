@@ -10,7 +10,7 @@ import {
 @Component({
  selector: 'get-involved',
   templateUrl: './get-involved.component.html',
-  styleUrls: ['./get-involved.component.css'],
+  styleUrls: ['./get-involved.component.scss'],
   animations: [
     trigger('scrollAnimation', [
       state('show', style({
