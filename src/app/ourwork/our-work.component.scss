@@ -39,11 +39,16 @@ img {
   }
 
   .ourwork-page-desc{
-    margin-bottom: 100px;
+    margin-bottom: 90px;
+  }
+  #row-project1{
+    background-color: #f3f3f3;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
 .img-slide{
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
     
@@ -59,6 +64,9 @@ img {
 
 .carousel-indicators {
   display: none;
+}
+#carousel-arrow-align{
+  text-align: center;
 }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
