@@ -11,7 +11,7 @@ import {
 @Component({
   selector: 'app-home',
   templateUrl: './app-home.component.html',
-  styleUrls: ['./app-home.component.scss'],
+  styleUrls: ['./app-home.component.css'],
   animations: [
     trigger('scrollAnimation', [
       state('show', style({
