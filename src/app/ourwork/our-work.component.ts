@@ -1,4 +1,4 @@
-import { Component,HostListener, ElementRef , Inject} from '@angular/core';
+import { Component,HostListener, ElementRef , Inject, OnInit} from '@angular/core';
 import {
   trigger,
   state,
@@ -6,6 +6,7 @@ import {
   animate,
   transition
 } from '@angular/animations';
+import { IImage } from 'ng-simple-slideshow';
 
 @Component({
  selector: 'our-work',
@@ -25,7 +26,7 @@ import {
   ]
 })
 
-export class OurWorkComponent{
+export class OurWorkComponent {
 
   state = 'hide'
 
@@ -42,5 +43,21 @@ export class OurWorkComponent{
 
     }
 
+    imageUrls: IImage[] = [
+      { url: '/assets/projects/project1/1.JPG'},
+      { url: '/assets/projects/project1/2.JPG'},
+      { url: '/assets/projects/project1/3.JPG'},
+      { url: '/assets/projects/project1/4.JPG'},
+      { url: '/assets/projects/project1/5.JPG'},
+      { url: '/assets/projects/project1/6.JPG'},
+      { url: '/assets/projects/project1/7.JPG'},
+      { url: '/assets/projects/project1/8.JPG'},
+      { url: '/assets/projects/project1/9.JPG'},
+      { url: '/assets/projects/project1/10.JPG'},
+      { url: '/assets/projects/project1/11.JPG'},
+      { url: '/assets/projects/project1/12.JPG'}    
+    ];
+
+    
     
 }

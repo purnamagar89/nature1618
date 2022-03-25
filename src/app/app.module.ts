@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -20,8 +21,8 @@ import { AppFooterComponent } from './footer/app-footer.component';
 @NgModule({
   imports:[
  CommonModule,
-NgtUniversalModule,
- 
+ NgtUniversalModule,
+ SlideshowModule,
     
     BrowserAnimationsModule,
     ReactiveFormsModule,
